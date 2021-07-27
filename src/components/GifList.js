@@ -1,12 +1,10 @@
 import React from "react";
+import Gif from "./Gif";
 
-const GifList = () => {
+const GifList = (gifs) => {
   return (
     <div className="gif-list">
-      <img
-        className="gif"
-        src="https://media.giphy.com/media/8H80IVPjAdKY8/giphy.gif"
-      />
+      <Gif selectedGif={gifs} />
     </div>
   );
 };

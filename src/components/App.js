@@ -4,14 +4,17 @@ import SearchBar from "./SearchBar";
 import GifList from "./GifList";
 
 const App = () => {
+  const selectedGif = ["4JEHyYKmDq9VdaZQAa"];
+  const gifs = ["8H80IVPjAdKY8"];
+
   return (
     <div>
       <div className="left-scene">
         <SearchBar />
-        <Gif />
+        <Gif selectedGif={selectedGif} />
       </div>
       <div className="right-scene">
-        <GifList />
+        <GifList gifs={gifs} />
       </div>
     </div>
   );
