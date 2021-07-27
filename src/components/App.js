@@ -3,8 +3,8 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <h1>Welcome to React Parcel Micro App!</h1>
-      <p>Hard to get more minimal than this React app.</p>
+      <div className="left-scene">hi</div>
+      <div className="right-scene">hi there</div>
     </div>
   );
 };
