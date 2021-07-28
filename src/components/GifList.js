@@ -1,10 +1,10 @@
 import React from "react";
 import Gif from "./Gif";
 
-const GifList = ({ gifs }) => {
+const GifList = ({ gifs, clickSelectedGif }) => {
   return gifs.map((gif) => (
-    <div className="gif-list">
-      <Gif selectedGif={gif} />
+    <div className="gif-list" key={gif}>
+      <Gif selectedGif={gif} clickSelectedGif={clickSelectedGif} />
     </div>
   ));
 };
