@@ -13,23 +13,23 @@ const App = () => {
     setSelectedGif(clickedGif);
   };
 
-  const giphy = require("giphy-api")({
-    apiKey: "0SwT6uJNkqFDYP9rHmuM86w8ixQ4EgEf",
-    https: true,
-  });
+  // const giphy = require("giphy-api")({
+  //   apiKey: "0SwT6uJNkqFDYP9rHmuM86w8ixQ4EgEf",
+  //   https: true,
+  // });
 
-  const changeGifIds = (keyword) => {
-    giphy.search(
-      {
-        q: keyword,
-        rating: "g",
-        limit: 10,
-      },
-      (err, res) => {
-        setGifs(res.data.map((gif) => gif.id));
-      }
-    );
-  };
+  // const changeGifIds = (keyword) => {
+  //   giphy.search(
+  //     {
+  //       q: keyword,
+  //       rating: "g",
+  //       limit: 10,
+  //     },
+  //     (err, res) => {
+  //       setGifs(res.data.map((gif) => gif.id));
+  //     }
+  //   );
+  // };
 
   return (
     <div>
