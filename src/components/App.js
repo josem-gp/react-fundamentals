@@ -5,7 +5,7 @@ import GifList from "./GifList";
 
 const App = () => {
   const selectedGif = "4JEHyYKmDq9VdaZQAa";
-  const gifs = "8H80IVPjAdKY8";
+  const gifs = ["8H80IVPjAdKY8", "cdNSp4L5vCU7aQrYnV"];
 
   return (
     <div>
